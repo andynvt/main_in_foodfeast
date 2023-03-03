@@ -46,7 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: WebViewWidget(controller: ctl),
+      body: SafeArea(
+        child: WebViewWidget(controller: ctl),
+      ),
     );
   }
 }
